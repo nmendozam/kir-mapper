@@ -6,12 +6,6 @@ process kir_mapper_map {
 
     publishDir 'output/map'
 
-    memory { 32.GB * task.attempt }
-    cpus { 8 * task.attempt }
-    time { 30.minutes * task.attempt }
-    errorStrategy { task.exitStatus in 137..140 ? 'retry' : 'terminate' }
-    maxRetries 3
-
     input:
         tuple val(sampleId), file(r1), file(r2)
         file config

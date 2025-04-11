@@ -17,7 +17,7 @@ process kir_mapper_map {
         file config
         file kir_mapper_db
     output:
-        path 'output/map/'
+        path "output/map/$sampleId"
     script:
         """
         wd=\$(pwd)/output

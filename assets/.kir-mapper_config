@@ -1,0 +1,9 @@
+db=./kir-mapper_db_latest/
+samtools=/usr/local/bin/samtools
+bcftools=/usr/local/bin/bcftools
+bwa=/usr/bin/bwa
+whatshap=/usr/bin/whatshap
+freebayes=/usr/bin/freebayes
+picard=/home/picard.jar
+star=/usr/bin/STAR
+shapeit4=/usr/bin/shapeit4

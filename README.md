@@ -1,4 +1,4 @@
-This is a very simple pipeline to map WES data to KIR reference genes using [kir-mapper](https://github.com/erickcastelli/kir-mapper).
+This is a very simple pipeline to map WES data to KIR reference genes using [kir-mapper](https://github.com/erickcastelli/kir-mapper). This pipeline only implements the map step, because it is the most time intensive of all kir-mapper steps and it needs to be executed on each sample. The other steps (ncopy, genotype and haplotype) are executed on the whole sample set so they can be executed manually afterwords.
 
 ## Requirements
 - [Nextflow](https://www.nextflow.io/)
